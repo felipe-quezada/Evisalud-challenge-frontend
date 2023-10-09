@@ -1,7 +1,15 @@
-<script setup></script>
+<script setup>
+import NavBar from './components/NavBar.vue'
+import HomePage from './views/HomePage.vue'
+</script>
 
 <template>
-  <main></main>
+  <header>
+    <NavBar />
+  </header>
+  <main>
+    <HomePage />
+  </main>
 </template>
 
 <style scoped></style>
