@@ -5,10 +5,10 @@ import TeacherProfiles from '../components/TeacherProfiles.vue'
 
 <template>
   <section
-    class="h-[442px] bg-bg-mobile bg-cover px-4 pt-[196px] md:bg-bg-desktop text-2xl text-white font-semibold leading-9 relative -z-10"
+    class="grid h-[442px] bg-bg-mobile bg-cover px-4 pt-[196px] md:bg-bg-desktop text-2xl text-white font-semibold leading-9 relative -z-10"
   >
     <h1>Descubre la Maravilla de la Naturaleza: Nuestros Cursos para un Mundo Más Verde</h1>
-    <ButtonPrimary class="w-full h-[45px] mt-10 text-sm" text="Comienza ahora" />
+    <ButtonPrimary class="w-full m-auto text-sm" to="#" text="Comienza ahora" />
   </section>
   <section class="h-[389px] bg-black px-4 py-16 text-center text-white text-sm">
     <p class="space-y-8">

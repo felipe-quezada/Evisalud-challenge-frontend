@@ -1,10 +1,7 @@
 <script setup>
-import { ref } from 'vue'
+import { useBoolean } from '../composables/useBoolean'
 
-let isClicked = ref(false)
-const handleClick = () => {
-  isClicked.value = !isClicked.value
-}
+const { booleanState: isClicked, setBooleanState } = useBoolean()
 </script>
 
 <template>
@@ -16,7 +13,7 @@ const handleClick = () => {
     </div>
 
     <!-- Hamburger menu animated -->
-    <div @click="handleClick" class="w-[35px] h-[24px] relative md:hidden">
+    <div @click="setBooleanState" class="w-[35px] h-[24px] relative md:hidden">
       <div
         :class="`bg-white absolute w-full h-[4px] transition duration-300 top-0 rounded-md ${
           isClicked ? 'rotate-45 translate-y-[12px]' : 'rotate-0'

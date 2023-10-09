@@ -1,44 +1,39 @@
 <script setup>
-import { ref } from 'vue'
+import { onMounted, ref } from 'vue'
+import AcordionComp from './AcordionComp.vue'
+import ButtonPrimary from './ButtonPrimary.vue'
+import axios from 'axios'
 
-const showMore = ref(false)
-const showMoreClicked = () => {
-  showMore.value = !showMore.value
-}
+const teachers = ref(null)
+onMounted(() => {
+  axios
+    .get('https://61c34f6f9cfb8f0017a3ead1.mockapi.io/api/v1/doctors')
+    .then((response) => (teachers.value = response.data))
+})
 </script>
 
 <template>
   <section class="bg-black-primary text-white text-center">
     <h3>Nuestros docentes</h3>
     <ul>
-      <li class="fpx-4 py-5">
-        <div class="flex">
-          <div class="bg-transparent h-20 w-20 rounded-full border-gray border-2"></div>
-          <div class="ml-4 text-left">
-            <strong class="text-white">Nombre cualquiera</strong>
-            <span class="block text-gray">Profeción</span>
-            <div
-              class="flex text-sky-primary underline decoration-solid font-semibold"
-              @click="showMoreClicked"
-            >
-              <button class="" v-if="showMore">Ver menos</button>
-              <button class="" v-else>Ver más</button>
-              <img
-                :class="`ml-2 transition duration-300 ${showMore ? 'rotate-180' : 'rotate-0'}`"
-                src="@/assets/arrowDown.svg"
-              />
-            </div>
+      <div v-for="teacher in teachers" :key="teacher.id">
+        <AcordionComp :name="teacher.name" :prof="teacher.job" :img="teacher.image">
+          <p>{{ teacher.description }}</p>
+          <br />
+          <div class="flex justify-between w-full">
+            <ButtonPrimary
+              :to="teacher.linkedin"
+              text="Linkedin"
+              class="w-[48%] font-semibold text-xs"
+            />
+            <ButtonPrimary
+              :to="teacher.posts"
+              text="Mira sus publicaciones"
+              class="w-[48%] font-semibold text-xs"
+            />
           </div>
-        </div>
-        <div :class="`mt-5 text-left px-4 transition ${showMore ? '' : 'hidden'}`">
-          <p>
-            Arlene es una apasionada geóloga ambiental que ha dedicado su vida a la conservación y
-            protección de los ecosistemas naturales. Nacida en una pequeña comunidad rural, desde
-            una edad temprana desarrolló un profundo amor por la naturaleza y las maravillas
-            geológicas que la componen.
-          </p>
-        </div>
-      </li>
+        </AcordionComp>
+      </div>
     </ul>
   </section>
 </template>
