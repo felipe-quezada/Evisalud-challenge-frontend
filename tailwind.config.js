@@ -24,6 +24,9 @@ export default {
       },
       screen: {
         sm: '500px'
+      },
+      transitionProperty: {
+        height: 'height'
       }
     }
   },

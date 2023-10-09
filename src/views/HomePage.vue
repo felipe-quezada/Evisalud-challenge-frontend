@@ -1,5 +1,6 @@
 <script setup>
 import ButtonPrimary from '../components/ButtonPrimary.vue'
+import TeacherProfiles from '../components/TeacherProfiles.vue'
 </script>
 
 <template>
@@ -30,6 +31,7 @@ import ButtonPrimary from '../components/ButtonPrimary.vue'
       </div>
     </section>
   </section>
+  <TeacherProfiles />
 </template>
 
 <style scoped></style>
