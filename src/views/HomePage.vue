@@ -6,18 +6,24 @@ import TeacherProfiles from '../components/TeacherProfiles.vue'
 
 <template>
   <section
-    class="grid h-[442px] bg-bg-mobile bg-cover px-4 pt-[196px] md:bg-bg-desktop text-2xl text-white font-semibold leading-9 relative -z-10"
+    class="grid h-[442px] bg-bg-mobile bg-cover px-4 pt-[196px] text-2xl text-white font-semibold leading-9 relative -z-10 lg:px-10 lg:bg-bg-desktop md:text-5xl md:h-auto"
   >
-    <h1>Descubre la Maravilla de la Naturaleza: Nuestros Cursos para un Mundo Más Verde</h1>
-    <ButtonPrimary class="w-full m-auto text-sm" to="#" text="Comienza ahora" />
+    <h1 class="w-5/6 lg:w-[750px] md:w-[500px] md:mb-16">
+      Descubre la Maravilla de la Naturaleza: Nuestros Cursos para un Mundo Más Verde
+    </h1>
+    <ButtonPrimary
+      class="w-full m-auto text-sm mb-8 md:w-[448px] md:ml-0 md:mr-auto md:mb-32"
+      to="#"
+      text="Comienza ahora"
+    />
   </section>
-  <section class="h-[389px] bg-black px-4 py-16 text-center text-white text-sm">
-    <p class="space-y-8">
+  <section class="bg-black px-4 py-16 text-center text-white text-sm">
+    <p class="space-y-8 md:text-xl lg:w-[900px] lg:mx-auto">
       Estamos impulsados por la firme creencia de que cada uno de nosotros puede marcar la
       diferencia y contribuir a un mundo más sostenible.
     </p>
 
-    <section class="h-[250px] py-4 px-5 flex flex-wrap justify-between items-center">
+    <section class="h-[250px] py-4 px-5 flex flex-wrap justify-between items-center sm:hidden">
       <div class="w-[141px] h-[78] flex flex-col items-center py-3 rounded-md bg-black-primary">
         <span class="text-sky-primary font-bold text-xl">25</span>
         <p class="w-1/2">Cursos online</p>
@@ -28,6 +34,24 @@ import TeacherProfiles from '../components/TeacherProfiles.vue'
       </div>
       <div class="w-[141px] h-[78] flex flex-col py-5 mx-auto rounded-md bg-black-primary sm:mx-0">
         <span class="text-sky-primary font-bold text-xl">12</span>
+        <p>Alianzas</p>
+      </div>
+    </section>
+    <section
+      class="bg-black-primary py-6 my-[60px] text-base justify-between rounded-full hidden sm:w-[350px] sm:mx-auto sm:flex sm:flex-row sm:justify-center sm:text-sm sm:px-10 lg:w-[920px] lg:px-[120px]"
+    >
+      <div class="flex flex-col items-center mr-auto">
+        <span class="text-sky-primary font-bold text-3xl sm:text-xl">25</span>
+        <p class="w-1/2 md:w-auto">Cursos online</p>
+      </div>
+      <hr class="w-[65px] border-gray mt-10 rotate-90" />
+      <div class="flex flex-col items-center m-auto">
+        <span class="text-sky-primary font-bold text-3xl sm:text-xl">14</span>
+        <p>Programas de formación</p>
+      </div>
+      <hr class="w-[65px] border-gray mt-10 rotate-90" />
+      <div class="flex flex-col items-center ml-auto">
+        <span class="text-sky-primary font-bold text-3xl sm:text-xl">12</span>
         <p>Alianzas</p>
       </div>
     </section>

@@ -23,8 +23,9 @@ export default {
         'bg-mobile': "url('@/assets/bg-mobile.png')",
         'bg-desktop': "url('@/assets/bg-desktop.png')"
       },
-      screen: {
-        sm: '500px'
+      screens: {
+        ss: '350px',
+        sm: '400px'
       },
       transitionProperty: {
         height: 'height'

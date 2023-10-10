@@ -5,7 +5,7 @@ import HomePage from './views/HomePage.vue'
 </script>
 
 <template>
-  <header>
+  <header class="md:absolute md:w-full">
     <NavBar />
   </header>
   <main>

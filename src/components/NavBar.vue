@@ -6,7 +6,7 @@ const { booleanState: isClicked, setBooleanState } = useBoolean()
 
 <template>
   <section
-    class="bg-black-secondary w-full h-[65px] px-[18px] relative flex flex-row justify-between items-center text-gray text-sm"
+    class="bg-black-secondary w-full h-[65px] px-[18px] relative flex flex-row justify-between items-center text-gray text-sm md:rounded-b-3xl md:z-20 md:px-14"
   >
     <div class="h-[36px] w-[95px]">
       <img src="@/assets/logo.svg" alt="logo" />
@@ -49,8 +49,22 @@ const { booleanState: isClicked, setBooleanState } = useBoolean()
           </button>
         </li>
         <li><a href="#">Cursos</a></li>
-        <li><a href="#">Sobre nosotrs</a></li>
+        <li><a href="#">Sobre nosotros</a></li>
       </ul>
+    </nav>
+
+    <nav class="hidden md:flex md:flex-row md:items-center list-none font-bold space-x-10 ml-4">
+      <li>
+        <button
+          role="link"
+          href="#"
+          class="h-[35px] w-[90px] rounded-full bg-sky-primary text-white font-bold"
+        >
+          Inicio
+        </button>
+      </li>
+      <li><a href="#">Cursos</a></li>
+      <li><a href="#">Sobre nosotros</a></li>
     </nav>
   </section>
 </template>
