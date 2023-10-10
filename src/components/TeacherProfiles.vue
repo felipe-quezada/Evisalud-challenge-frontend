@@ -13,8 +13,14 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="bg-black-primary text-white text-center">
-    <h3>Nuestros docentes</h3>
+  <section class="bg-black-primary text-white text-center pt-4 -z-20">
+    <div class="flex items-center justify-center">
+      <h3
+        class="font-bold relative z-20 after:content-[''] after:bg-sky-primary after:absolute after:h-2 after:w-32 after:left-0 after:ml-1.5 after:bottom-0.5 after:-z-10 after:rounded-full"
+      >
+        Nuestros docentes
+      </h3>
+    </div>
     <ul>
       <div v-for="teacher in teachers" :key="teacher.id">
         <AcordionComp :name="teacher.name" :prof="teacher.job" :img="teacher.image">

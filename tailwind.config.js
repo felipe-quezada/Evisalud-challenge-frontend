@@ -16,6 +16,7 @@ export default {
           DEFAULT: '#515166'
         },
         'sky-primary': '#0193C1',
+        'sky-primary!': '#0193C1 !important',
         'gradiant-blue': '#018FCD'
       },
       backgroundImage: {
