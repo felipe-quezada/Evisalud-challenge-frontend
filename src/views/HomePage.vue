@@ -60,7 +60,7 @@ import TeacherProfiles from '../components/TeacherProfiles.vue'
       </section>
       <!-- light efect -->
       <div
-        class="absolute h-[299px] w-[299px] left-0 right-0 m-auto rounded-full xl:h-[667px] xl:w-[667px] bg-gradiant-blue blur-lg opacity-10 xl:rounded-full xl:top-[700px] xl:-left-[400px]"
+        class="absolute h-[299px] w-[299px] left-0 right-0 m-auto rounded-full xl:h-[667px] xl:w-[667px] bg-gradiant-blue blur-lg opacity-10 xl:rounded-full xl:top-[700px] xl:-left-[400px] xl:m-0"
       ></div>
     </section>
   </section>
