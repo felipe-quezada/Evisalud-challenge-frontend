@@ -13,7 +13,7 @@ const { booleanState: showMore, setBooleanState } = useBoolean()
   <li class="px-4 py-5">
     <div
       :class="` lg:w-[750px] md:transition md:duration-300 md:text-sm ${
-        showMore ? 'lg:translate-x-[200px]' : 'translate-x-0'
+        showMore ? 'xl:translate-x-[150px]' : 'translate-x-0'
       }`"
     >
       <div class="flex">
