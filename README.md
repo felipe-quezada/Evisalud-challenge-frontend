@@ -65,4 +65,4 @@ En resumen, este reto fue una gran oportunidad de sacar mi potencial y poder mos
 
 # Aplicación desplegada
 
-_in contruction_
+[Enlace a aplicación en vivo](https://evisalud-challenge-frontend.vercel.app/)
