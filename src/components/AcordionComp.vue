@@ -36,7 +36,7 @@ const { booleanState: showMore, setBooleanState } = useBoolean()
       </div>
     </div>
     <hr class="w-full border-gray mt-10" />
-    <div :class="`mt-5 text-left px-4 transition ${showMore ? '' : 'hidden'}`">
+    <div :class="`mt-5 text-left transition ${showMore ? '' : 'hidden'}`">
       <slot> </slot>
     </div>
   </li>

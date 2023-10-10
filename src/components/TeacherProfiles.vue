@@ -30,12 +30,12 @@ onMounted(() => {
             <ButtonPrimary
               :to="teacher.linkedin"
               text="Linkedin"
-              class="w-[48%] font-semibold text-xs"
+              class="w-40 font-semibold text-xs"
             />
             <ButtonPrimary
               :to="teacher.posts"
               text="Mira sus publicaciones"
-              class="w-[48%] font-semibold text-xs"
+              class="w-40 font-semibold text-xs"
             />
           </div>
         </AcordionComp>
