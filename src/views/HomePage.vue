@@ -2,6 +2,9 @@
 import ButtonPrimary from '../components/ButtonPrimary.vue'
 import CardComponent from '../components/CardComponent.vue'
 import TeacherProfiles from '../components/TeacherProfiles.vue'
+import carShop from '@/assets/carShop.svg'
+import whatsappBlue from '@/assets/WhatsappBlue.svg'
+import info from '@/assets/info.svg'
 </script>
 
 <template>
@@ -109,7 +112,7 @@ import TeacherProfiles from '../components/TeacherProfiles.vue'
           </div>
           <ButtonPrimary
             class="h-11 bg-white text-sky-primary!"
-            img="src/assets/carShop.svg"
+            :img="carShop"
             text="Agregar al carrito"
             to="#"
           />
@@ -117,13 +120,13 @@ import TeacherProfiles from '../components/TeacherProfiles.vue'
           <span>Si tienes dudas o necesitas más información, contáctanos:</span>
           <ButtonPrimary
             class="h-11 bg-white text-sky-primary!"
-            img="src/assets/WhatsappBlue.svg"
+            :img="whatsappBlue"
             text="ir a Whatsapp (+51 990 888 777)"
             to="#"
           />
           <ButtonPrimary
             class="h-11 border-2 border-white"
-            img="src/assets/info.svg"
+            :img="info"
             text="Ir a Preguntas frecuentes"
             to="#"
           />
