@@ -3,7 +3,7 @@ import ButtonPrimary from '../components/ButtonPrimary.vue'
 import CardComponent from '../components/CardComponent.vue'
 import TeacherProfiles from '../components/TeacherProfiles.vue'
 import carShop from '@/assets/carShop.svg'
-import whatsappBlue from '@/assets/WhatsappBlue.svg'
+import whatsappBlue from '@/assets/whatsappBlue.svg'
 import info from '@/assets/info.svg'
 </script>
 
