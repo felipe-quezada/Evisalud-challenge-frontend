@@ -1,6 +1,6 @@
 <script setup>
 const { number, courseTitle, weeksTime } = defineProps({
-  number: Number,
+  number: String,
   courseTitle: String,
   weeksTime: String
 })
